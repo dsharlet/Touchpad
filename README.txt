@@ -1,0 +1,1 @@
+This is the source code and related assets for the Touchpad android app and related Windows server executable. Please see http://www.thingsstuff.com/2012/04/12/touchpad-a-computer-remote-control-app-for-android/ for more information.
