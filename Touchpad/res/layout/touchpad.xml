@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:windowSoftInputMode="adjustResize">
+
+	<!-- Keyboard/Mouse buttons -->
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/buttons"
+    	android:layout_width="wrap_content" android:layout_height="wrap_content"
+    	android:layout_gravity="center_horizontal"
+    	android:orientation="horizontal">
+    	
+    	<ImageButton
+          	android:id="@+id/keyboard" 
+          	android:contentDescription="@string/keyboard_desc"
+          	android:layout_width="wrap_content" 
+          	android:layout_height="wrap_content"
+          	android:focusable="true" 
+          	android:focusableInTouchMode="true" 
+          	android:src="@drawable/keyboard" 
+          	android:background="@null" /> 
+          	
+        <!-- Mouse buttons -->
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:id="@+id/mousebuttons"
+    	    android:contentDescription="@string/mousebuttons_desc"
+    		android:layout_width="wrap_content" android:layout_height="wrap_content"
+    		android:orientation="horizontal">
+    		
+			<TextView 
+			   	android:id="@+id/line1" 
+			    style="?android:attr/listSeparatorTextViewStyle" 
+          		android:padding="5dip"
+			   	android:gravity="center_horizontal" 
+		    	android:layout_width="1dp" 
+			    android:layout_height="match_parent" /> 
+		    
+	    	<ToggleButton  
+    	      	android:id="@+id/button0" 
+        	  	android:contentDescription="@string/button0_desc"
+          		android:textOn="" android:textOff=""
+	          	android:layout_width="wrap_content" 
+    	      	android:layout_height="wrap_content"
+        	  	android:background="@drawable/button0" />
+	    	<ToggleButton  
+    	      	android:id="@+id/button1" 
+        	  	android:contentDescription="@string/button1_desc"
+          		android:textOn="" android:textOff=""
+		        android:layout_width="wrap_content" 
+        	  	android:layout_height="wrap_content"
+          		android:background="@drawable/button1" />
+          	
+		</LinearLayout>
+		
+        <!-- Modifier keys -->
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:id="@+id/modifiers"
+    	    android:contentDescription="@string/modifiers_desc"
+    		android:layout_width="wrap_content" android:layout_height="wrap_content"
+    		android:orientation="horizontal">
+    		
+ 			<TextView 
+			   	android:id="@+id/line2" 
+			    style="?android:attr/listSeparatorTextViewStyle" 
+          		android:padding="5dip"
+			   	android:gravity="center_horizontal" 
+		    	android:layout_width="1dp" 
+			    android:layout_height="match_parent" /> 
+		    
+		   	<ToggleButton  
+    	      	android:id="@+id/key_shift" 
+        	  	android:contentDescription="@string/keyshift_desc"
+          		android:textOn="" android:textOff=""
+	          	android:layout_width="wrap_content" 
+    	      	android:layout_height="wrap_content"
+        	  	android:background="@drawable/key_shift" />
+	    	<ToggleButton  
+    	      	android:id="@+id/key_ctrl" 
+        	  	android:contentDescription="@string/keyctrl_desc"
+          		android:textOn="" android:textOff=""
+	          	android:layout_width="wrap_content" 
+    	      	android:layout_height="wrap_content"
+        	  	android:background="@drawable/key_ctrl" />
+	    	<ToggleButton  
+    	      	android:id="@+id/key_alt" 
+        	  	android:contentDescription="@string/keyalt_desc"
+          		android:textOn="" android:textOff=""
+	          	android:layout_width="wrap_content" 
+    	      	android:layout_height="wrap_content"
+        	  	android:background="@drawable/key_alt" />
+        	  	
+		</LinearLayout>
+		
+    </LinearLayout>
+
+	<!-- Touchpad area -->
+    <ImageView 
+        android:id="@+id/touchpad"
+        android:contentDescription="@string/touchpad_desc"
+        android:layout_width="match_parent" 
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:scaleType="centerInside"
+        android:src="@drawable/background"
+       	android:focusable="true" 
+       	android:focusableInTouchMode="true" />
+    
+    <!--  Toolbars -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:contentDescription=""
+    	android:layout_width="wrap_content" android:layout_height="wrap_content"
+    	android:layout_gravity="center_horizontal"
+    	android:orientation="horizontal">
+    
+		<!-- Browser buttons -->
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:id="@+id/browser"
+    	    android:contentDescription="@string/browser_desc"
+    		android:layout_width="wrap_content" android:layout_height="wrap_content"
+    		android:orientation="horizontal">
+          	
+	    	<ImageButton  
+    	      	android:id="@+id/browseback" 
+       			android:contentDescription="@string/browseback_desc"
+          		android:layout_width="wrap_content" 
+	          	android:layout_height="wrap_content"
+    	      	android:padding="5dip"
+        	  	android:src="@drawable/browse_back" 
+          		android:background="@null" /> 
+	    	<ImageButton  
+    	      	android:id="@+id/browsehome" 
+       			android:contentDescription="@string/browsehome_desc"
+          		android:layout_width="wrap_content" 
+	          	android:layout_height="wrap_content"
+    	      	android:padding="5dip"
+        	  	android:src="@drawable/browse_home" 
+          		android:background="@null" /> 
+	    	<ImageButton  
+    	      	android:id="@+id/browseforward" 
+       			android:contentDescription="@string/browseforward_desc"
+          		android:layout_width="wrap_content" 
+	          	android:layout_height="wrap_content"
+    	      	android:padding="5dip"
+        	  	android:src="@drawable/browse_forward" 
+	          	android:background="@null" />
+          	     
+		</LinearLayout>       	
+		       	
+		<!-- Media buttons -->
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:id="@+id/media"
+		   	android:contentDescription="@string/media_desc"
+		   	android:layout_width="wrap_content" android:layout_height="wrap_content"
+		   	android:orientation="horizontal">
+		    	
+		   	<ImageButton  
+		       	android:id="@+id/stop" 
+		   		android:contentDescription="@string/mediastop_desc"
+		       	android:layout_width="wrap_content" 
+		       	android:layout_height="wrap_content"
+		       	android:padding="5dip"
+		       	android:src="@drawable/media_stop" 
+		       	android:background="@null" /> 
+		          	
+			<TextView 
+				android:id="@+id/line3" 
+				style="?android:attr/listSeparatorTextViewStyle" 
+		       	android:padding="5dip"
+			  	android:gravity="center_horizontal" 
+			  	android:layout_width="1dp" 
+				android:layout_height="match_parent" /> 
+				    
+		    <ImageButton  
+		       	android:id="@+id/prevtrack" 
+		    	android:contentDescription="@string/mediaprevtrack_desc"
+		       	android:layout_width="wrap_content" 
+		       	android:layout_height="wrap_content"
+		       	android:padding="5dip"
+		       	android:src="@drawable/media_prevtrack" 
+		       	android:background="@null" /> 
+		    <ImageButton  
+		       	android:id="@+id/playpause" 
+		    	android:contentDescription="@string/mediaplaypause_desc"
+		       	android:layout_width="wrap_content" 
+		       	android:layout_height="wrap_content"
+		       	android:padding="5dip"
+		       	android:src="@drawable/media_playpause" 
+		      	android:background="@null" /> 
+		    <ImageButton  
+		       	android:id="@+id/nexttrack" 
+		    	android:contentDescription="@string/medianexttrack_desc"
+		      	android:layout_width="wrap_content" 
+		       	android:layout_height="wrap_content"
+		       	android:padding="5dip"
+		       	android:src="@drawable/media_nexttrack" 
+		       	android:background="@null" /> 
+		
+			<TextView 
+			  	android:id="@+id/line4" 
+			    style="?android:attr/listSeparatorTextViewStyle" 
+		       	android:padding="5dip"
+			   	android:gravity="center_horizontal" 
+			  	android:layout_width="1dp" 
+			    android:layout_height="match_parent" /> 
+		          	
+		    <ImageButton  
+		       	android:id="@+id/volumemute" 
+		    	android:contentDescription="@string/volumemute_desc"
+		       	android:layout_width="wrap_content" 
+		       	android:layout_height="wrap_content"
+		       	android:padding="5dip"
+		       	android:src="@drawable/volume_mute" 
+		       	android:background="@null" /> 
+		    <ImageButton  
+		       	android:id="@+id/volumedown" 
+		    	android:contentDescription="@string/volumedown_desc"
+		       	android:layout_width="wrap_content" 
+		       	android:layout_height="wrap_content"
+		       	android:padding="5dip"
+		       	android:src="@drawable/volume_down" 
+		       	android:background="@null" /> 
+		    <ImageButton  
+		       	android:id="@+id/volumeup" 
+		    	android:contentDescription="@string/volumeup_desc"
+		       	android:layout_width="wrap_content" 
+		       	android:layout_height="wrap_content"
+		       	android:padding="5dip"
+		       	android:src="@drawable/volume_up" 
+		       	android:background="@null" />
+         	    
+   		</LinearLayout>
+   		  
+    </LinearLayout>   
+    
+</LinearLayout>
+
+

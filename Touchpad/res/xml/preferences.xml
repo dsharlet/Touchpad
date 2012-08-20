@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+	<PreferenceCategory 
+		android:title="@string/client">
+		
+    	<com.thingsstuff.touchpad.SeekBarPreference
+	    	android:key="Sensitivity"
+	    	android:defaultValue="50"
+    		android:persistent="true"
+    		android:title="@string/sensitivity"
+	    	android:summary="@string/sensitivity_summary"
+    		android:dialogTitle="@string/sensitivity" />
+    		
+	    <ListPreference 
+    		android:key="MultitouchMode"
+    		android:entries="@array/multitouchmode_options" 
+    		android:entryValues="@array/multitouchmode_values"
+    		android:defaultValue="1"
+	    	android:persistent="true"
+    		android:title="@string/multitouchmode"
+    		android:summary="@string/multitouchmode_summary"
+	    	android:dialogTitle="@string/multitouchmode" />
+    		
+    	<CheckBoxPreference
+    		android:key="EnableMouseButtons"
+    		android:defaultValue="false"
+    		android:persistent="true"
+    		android:title="@string/enablemousebuttons"
+    		android:summary="@string/enablemousebuttons_summary" />
+    		
+    	<CheckBoxPreference
+    		android:key="EnableModifiers"
+    		android:defaultValue="false"
+    		android:persistent="true"
+    		android:title="@string/enablemodifiers"
+    		android:summary="@string/enablemodifiers_summary" />
+    		
+    	<CheckBoxPreference
+    		android:key="EnableScrollBar"
+    		android:defaultValue="true"
+    		android:persistent="true"
+    		android:title="@string/enablescrollbar"
+    		android:summary="@string/enablescrollbar_summary" />
+    		
+    	<com.thingsstuff.touchpad.SeekBarPreference
+	    	android:key="ScrollBarWidth"
+	    	android:defaultValue="20"
+	    	android:max="200"
+    		android:persistent="true"
+    		android:title="@string/scrollbarwidth"
+	    	android:summary="@string/scrollbarwidth_summary"
+	    	android:text=" pixels"
+    		android:dialogTitle="@string/scrollbarwidth" />
+    		
+    	<CheckBoxPreference
+    		android:key="EnableSystem"
+    		android:defaultValue="true"
+    		android:persistent="true"
+    		android:title="@string/enablesystem"
+    		android:summary="@string/enablesystem_summary" />
+    	
+	    <ListPreference 
+    		android:key="Toolbar"
+    		android:entries="@array/toolbar_options" 
+    		android:entryValues="@array/toolbar_values"
+    		android:defaultValue="0"
+	    	android:persistent="true"
+    		android:title="@string/toolbar"
+    		android:summary="@string/toolbar_summary"
+	    	android:dialogTitle="@string/toolbar" />
+	    	
+	</PreferenceCategory>
+    	
+	<PreferenceCategory 
+		android:title="@string/server">
+		
+    	<EditTextPreference 
+    		android:key="Port"
+    		android:numeric="integer"
+    		android:defaultValue="2999"
+    		android:persistent="true"
+    		android:title="@string/port"
+    		android:summary="@string/port_summary"
+    		android:dialogTitle="@string/port" />
+ 
+    	<com.thingsstuff.touchpad.SeekBarPreference
+	    	android:key="Timeout"
+	    	android:defaultValue="500"
+	    	android:max="2000"
+    		android:persistent="true"
+    		android:title="@string/timeout"
+	    	android:summary="@string/timeout_summary"
+	    	android:text=" ms"
+    		android:dialogTitle="@string/timeout" />
+    </PreferenceCategory>    	
+</PreferenceScreen>

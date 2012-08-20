@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<!-- This file contains resource definitions for displayed strings, allowing
+     them to be changed based on the locale and options. -->
+
+<resources>
+    <!-- Simple strings. -->
+    <string name="appname">Touchpad</string>
+    <string name="error">Error</string>
+    <string name="error_password">Incorrect password</string>
+    <string name="error_connect">Connection rejected</string>
+    <string name="error_connecting">Error connecting to</string>
+    <string name="error_noservers">No servers found!\n\nVerify that the server is running and available on the same network as your device.</string>
+    <string name="error_nofavorites">No favorite servers!</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="exit">Exit</string>
+
+	<!-- Content descriptions -->
+	<string name="keyboard_desc">Keyboard</string>
+	
+	<string name="mousebuttons_desc">Keyboard</string>
+	<string name="button0_desc">Left Button</string>
+	<string name="button1_desc">Right Button</string>
+	
+	<string name="modifiers_desc">Modifiers</string>
+	<string name="keyshift_desc">Shift</string>
+	<string name="keyctrl_desc">Ctrl</string>
+	<string name="keyalt_desc">Alt</string>
+	
+	<string name="touchpad_desc">Touchpad</string>
+	
+	<string name="browser_desc">Browser</string>
+	<string name="browseback_desc">Back</string>
+	<string name="browsehome_desc">Home</string>
+	<string name="browseforward_desc">Forward</string>
+	
+	<string name="media_desc">Media</string>
+	<string name="mediaprevtrack_desc">Previous</string>
+	<string name="medianexttrack_desc">Next</string>
+	<string name="mediaplaypause_desc">Play/Pause</string>
+	<string name="mediastop_desc">Stop</string>
+	<string name="volumemute_desc">Mute</string>
+	<string name="volumeup_desc">Volume Up</string>
+	<string name="volumedown_desc">Volume Down</string>
+
+	<!-- Context menu. -->
+	<string name="servers">Servers</string>
+	<string name="findservers">Find Servers&#8230;</string>
+	<string name="favoriteservers">Favorites&#8230;</string>
+    <string name="customserver">Custom server&#8230;</string>
+
+	<!-- Options menu. -->
+    <string name="connect">Connect&#8230;</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="addfavorite">Add to Favorites</string>
+    <string name="preferences">Preferences&#8230;</string>
+    
+    <!-- Custom Server Dialog. -->
+    <string name="customserver_title">Custom Server</string>
+    <string name="customserver_message">Enter server to connect to:</string>
+    <string name="ok_connect">Connect</string>
+    
+    <!-- Connection Dialog. -->
+    <string name="password_title">Password</string>
+    <string name="password_message">Enter password:</string>
+    
+    <!-- Preferences -->
+    <string name="client">Client Preferences</string>
+    
+    <string name="sensitivity">Sensitivity</string>
+    <string name="sensitivity_summary">Touchpad sensitivity.</string>
+    
+    <string name="multitouchmode">Multitouch Mode</string>
+    <string name="multitouchmode_summary">Choose the action for two finger operations.</string>
+    <string-array name="multitouchmode_options">        
+        <item>None</item>
+        <item>Drag / Right Click</item>
+        <item>Scroll / Right Click</item>
+    </string-array>       
+    <string-array name="multitouchmode_values">        
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+        
+    <string name="enablemousebuttons">Enable Mouse Buttons</string>
+    <string name="enablemousebuttons_summary">Show the left and right mouse toggle buttons.</string>
+        
+    <string name="enablemodifiers">Enable Modifier Keys</string>
+    <string name="enablemodifiers_summary">Show the Shift, Ctrl, and Alt modifier key toggle buttons.</string>
+    
+    <string name="enablescrollbar">Enable Scroll Bar</string>
+    <string name="enablescrollbar_summary">Enable scrolling by dragging the right edge of the screen.</string>
+    
+    <string name="scrollbarwidth">Scroll Bar Width</string>
+    <string name="scrollbarwidth_summary">Width of the area at the edge of the screen to use for scrolling.</string>
+    
+    <string name="enablesystem">Enable System Buttons</string>
+    <string name="enablesystem_summary">Allow Touchpad to use the hardware buttons to control your computer.</string>
+    
+    <string name="toolbar">Toolbar</string>
+    <string name="toolbar_summary">Choose the toolbar to use for extra control.</string>
+    <string-array name="toolbar_options">        
+        <item>None</item>
+        <item>Media</item>
+        <item>Browser</item>
+    </string-array>       
+    <string-array name="toolbar_values">        
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>    
+
+
+    <string name="server">Server Preferences</string>
+    
+    <string name="port">Server Port</string>
+    <string name="port_summary">Default server port.</string>
+    
+    <string name="timeout">Timeout Period</string>
+    <string name="timeout_summary">Timeout period for server searches and connection attempts.</string>
+    
+    <string name="favorites">Favorites</string>
+    
+</resources>
+
